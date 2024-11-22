@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقات الصور والفيديوهات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hwb(1 48% 4%);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* تنسيق الحاوية التي تحتوي على جميع البطاقات */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* تنسيق كل بطاقة */
+        .card {
+            width: 300px;
+            background-color: hsl(0, 98%, 84%);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px hwb(0 6% 41% / 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* تكبير البطاقة عند المرور عليها */
+        }
+
+        /* تنسيق الصورة داخل البطاقة */
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;  /* لتغطية المساحة دون تشويه الصورة */
+        }
+
+        /* تنسيق الفيديو داخل البطاقة */
+        .card video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;  /* لتغطية المساحة دون تشويه الفيديو */
+        }
+
+        /* تنسيق نص البطاقة */
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: hsl(0, 35%, 20%);
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: hsl(0, 51%, 45%);
+        }
+
+        /* تنسيق الزر داخل البطاقة */
+        .card-content .btn {
+            background-color: hwb(1 48% 4%);
+            color: rgb(250, 242, 242);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .card-content .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- بطاقة 1 -->
+        <div class="card">
+            <img src="../image/tt15.png" alt="Image 1">
+            <div class="card-content">
+                <h3>caftan marocain</h3>
+                <p>Livraison gratuite</p>
+                <a  class="btn" target="_blank">2000 dh</a>
+            </div>
+        </div>
+
+        <!-- بطاقة 2 -->
+        <div class="card">
+            <img src="../image/tt12.png" alt="Image 2">
+            <div class="card-content">
+                <h3>caftan marocain</h3>
+                <p>Livraison gratuite</p>
+                <a class="btn" target="_blank">2000 dh</a>
+            </div>
+        </div>
+        <!-- بطاقة 3 -->
+        <div class="card">
+            <img src="../image/tt14.png" alt="Image 2">
+            <div class="card-content">
+                <h3>caftan marocain</h3>
+                <p>Livraison gratuite</p>
+                <a  class="btn" target="_blank">2000 dh</a>
+            </div>
+        </div>
+
+        <!-- بطاقة 4 -->
+        <div class="card">
+            <img src="../image/tt8.png" alt="Image 2">
+            <div class="card-content">
+                <h3>caftan marocain</h3>
+                <p>Livraison gratuite</p>
+                <a class="btn" target="_blank">2000 dh</a>
+            </div>
+        </div>
+    
+     <!-- بطاقة 5 -->
+     <div class="card">
+        <img src="../image/caf1.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 6 -->
+    <div class="card">
+        <img src="../image/tt9.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 7 -->
+     <div class="card">
+        <img src="../image/caf3.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 8 -->
+     <div class="card">
+        <img src="../image/tt4.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 9 -->
+     <div class="card">
+        <img src="../image/tt.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 10 -->
+     <div class="card">
+        <img src="../image/tt1.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 11 -->
+     <div class="card">
+        <img src="../image/tt2.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 12 -->
+     <div class="card">
+        <img src="../image/tt3.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/tt5.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/tt6.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/tt7.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/tt10.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/tt16.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/bb15.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+    <!-- بطاقة 12 -->
+    <div class="card">
+        <img src="../image/cf2.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+     <!-- بطاقة 12 -->
+     <div class="card">
+        <img src="../image/tt19.png" alt="Image 2">
+        <div class="card-content">
+            <h3>caftan marocain</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+</div>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(89, 87, 87);
+            margin: 0;
+            padding: 0;
+        }
+
+    /* تنسيق الحاوية التي تحتوي على جميع البطاقات */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* تنسيق كل بطاقة */
+    .card {
+        width: 300px;
+        background-color: hwb(0 65% 34%);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px hwb(0 6% 41% / 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* تكبير البطاقة عند المرور عليها */
+    }
+
+    /* تنسيق الصورة داخل البطاقة */
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;  /* لتغطية المساحة دون تشويه الصورة */
+    }
+
+    /* تنسيق الفيديو داخل البطاقة */
+    .card video {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;  /* لتغطية المساحة دون تشويه الفيديو */
+    }
+
+    /* تنسيق نص البطاقة */
+    .card-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-content h3 {
+        margin: 10px 0;
+        font-size: 18px;
+        color: rgb(97, 93, 93);
+    }
+
+    .card-content p {
+        font-size: 14px;
+        color:rgba(33, 17, 17, 0.1);
+    }
+
+    /* تنسيق الزر داخل البطاقة */
+    .card-content .btn {
+        background-color: hsl(0, 13%, 6%);
+        color: rgb(250, 242, 242);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .card-content .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="card-container">
+    <!-- بطاقة 2 -->
+    <div class="card">
+        <img src="../image/bb14.png" alt="Image 1">
+        <div class="card-content">
+            <h3>Bijoux pour caftan</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+
+    <!-- بطاقة 3 -->
+    <div class="card">
+        <img src="../image/bb13.png" alt="Image 2">
+        <div class="card-content">
+            <h3>Bijoux pour caftan</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+
+    <!-- بطاقة 4 -->
+    <div class="card">
+        <img src="../image/bb12.png" alt="Image 1">
+        <div class="card-content">
+            <h3>Bijoux pour caftan</h3>
+            <p>Livraison gratuite</p>
+            <a  class="btn" target="_blank">2000 dh</a>
+        </div>
+    </div>
+
+ <!-- بطاقة 5 -->
+ <div class="card">
+    <img src="../image/bb11.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 6 -->
+<div class="card">
+    <img src="../image/bb10.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 7 -->
+ <div class="card">
+    <img src="../image/bb9.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 8 -->
+ <div class="card">
+    <img src="../image/bb8.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 9 -->
+ <div class="card">
+    <img src="../image/bb7.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 10 -->
+ <div class="card">
+    <img src="../image/bb6.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 11 -->
+ <div class="card">
+    <img src="../image/bb5.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 12 -->
+ <div class="card">
+    <img src="../image/bb4.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+<!-- بطاقة 12 -->
+<div class="card">
+    <img src="../image/bb3.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+<!-- بطاقة 12 -->
+<div class="card">
+    <img src="../image/bb2.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+<!-- بطاقة 12 -->
+<div class="card">
+    <img src="../image/bb1.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+<!-- بطاقة 12 -->
+<div class="card">
+    <img src="../image/bb.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+ <!-- بطاقة 12 -->
+ <div class="card">
+    <img src="../image/bb16.png" alt="Image 2">
+    <div class="card-content">
+        <h3>Bijoux pour caftan</h3>
+        <p>Livraison gratuite</p>
+        <a  class="btn" target="_blank">2000 dh</a>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
